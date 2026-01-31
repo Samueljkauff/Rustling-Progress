@@ -17,9 +17,9 @@ impl Package {
         }
 
         Self {
-            sender_country: sender_country.to_string(),
-            recipient_country: recipient_country.to_string(),
-            weight_in_grams: weight_in_grams,
+            sender_country,
+            recipient_country,
+            weight_in_grams,
         }
     }
 
@@ -27,7 +27,7 @@ impl Package {
     fn is_international(&self) -> bool {
         // TODO: Read the tests that use this method to find out when a package
         // is considered international.
-        if self.sender_country == "Canada".to_string() {
+        if self.sender_country == "Canada" {
             return false;
         }
 
