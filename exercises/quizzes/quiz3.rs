@@ -14,7 +14,7 @@
 // TODO: Adjust the struct as described above.
 
 use std::fmt::Display;
-struct ReportCard<T: Display> {
+struct ReportCard<T> {
     grade: T,
     student_name: String,
     student_age: u8,
